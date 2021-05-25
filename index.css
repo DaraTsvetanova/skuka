@@ -1,0 +1,146 @@
+html, body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 2em;
+  background-color: #e8e0f0;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 80px 1fr 80px;
+}  
+
+.logo, a {
+  font-family: 'Lobster', cursive;
+  text-decoration: none;
+  color: #454348;
+  margin-top: 2px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  color: #454348;
+  font-size: 35px;
+}
+
+p {
+  margin-top: 100px;
+  text-align: center;
+  color: #454348;
+  font-size: 20px;
+}
+
+select#type {
+  width: 250px;
+  padding: 15px 10px;
+  margin: 7px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+  -webkit-appearance: none;
+  border: 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+select#participants {
+  width: 250px;
+  margin: 7px;
+  padding: 15px 10px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 17px;
+  font-family: 'Roboto', sans-serif;
+  -webkit-appearance: none;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+button {
+  padding: 14.5px 10px;
+  margin-left: 7px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 17px;
+  background-color: #c2acd7;
+  color: #454348; 
+  transition: 0.2s all;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+button:hover {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.display {
+  width: 500px;
+  margin: 100px auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  background: #c2acd7;
+  transition: 0.2s all; 
+}
+
+.popout {
+  animation: popout 0.5s ease;
+  -webkit-animation: popout 0.5s ease;
+}
+@keyframes popout {
+  from{transform:scale(0)}
+  80%{transform:scale(1.2)}
+  to{transform:scale(1)}
+}
+@-webkit-keyframes popout {
+  from{-webkit-transform:scale(0)}
+  80%{-webkit-transform:scale(1.2)}
+  to{-webkit-transform:scale(1)}
+
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.brand-font {
+  font-family: 'Lobster', cursive;
+}
+
+footer {
+  text-align: center;
+}
+
+/* Smartphones */
+@media(max-width: 500px){
+  .search {
+    flex-direction: column;
+  }
+
+  h2 {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  p {
+    margin: 10px;
+    padding: 10px;
+  }
+
+
+  button {
+    margin-top: 10px;
+  }
+
+  .display {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 250px;
+  }
+}
+

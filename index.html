@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <title>Skuka</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="logo"> <a href="index.html">Skuka</a></h1>
+  </header>
+  <div class="container">
+    <div>
+      <h2>Have you ever wondered: "I am so bored. I don't know what to do."</h2>
+      <p>Select a type of activity and get a random challenge to do alone or with a friend.
+      </p>
+    </div>
+    <div class="search">
+      <select name="type" id="type">
+        <option>Type of activity ⚽</option>
+        <option value="education">Education 🎓</option>
+        <option value="recreational">Recreational 🧚</option>
+        <option value="social">Social 🍻</option>
+        <option value="diy">Diy 🧶</option>
+        <option value="charity">Charity 🎗️</option>
+        <option value="cooking">Cooking 🧑‍🍳</option>
+        <option value="relaxation">Relaxation 🧘</option>
+        <option value="music">Music 🎵</option>
+        <option value="busywork">Busy 💻</option>
+      </select>
+      <select name="participants" id="participants">
+        <option>Number of participants 👤</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <button class="kill brand-font">Kill the boredom!</button>
+    </div>
+    <section id="activity"></section>
+  </div>
+  <footer><span class="brand-font">Skuka</span> &copy; 2021, All Rights Reserved</footer>
+  <script src="index.js"></script>
+</body>
+
+</html>
