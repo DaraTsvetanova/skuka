@@ -3,7 +3,7 @@ const numberParticipants = document.querySelector('[name="participants"]');
 const button = document.querySelector('.kill');
 
 
-const endpoint = 'http://www.boredapi.com/api'; 
+const endpoint = 'https://www.boredapi.com/api'; 
 
 async function fetchActivity(type, participants) {
   const res = await fetch(`${endpoint}/activity?type=${type}&participants=${participants}`);
